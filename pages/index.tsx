@@ -1,10 +1,10 @@
-import Link from "next/link";
-import { AppShell, Title, Flex, Button } from "@mantine/core";
+import { AppShell, Title, Flex } from "@mantine/core";
 import Avatar from "../components/avatar";
+import Header from "../components/header";
 
 export default function Home() {
   return (
-    <AppShell>
+    <AppShell header={<Header />}>
       <Flex mih={50} gap="md" justify="center" align="center" direction="column" className="h-screen">
 
         <div className="flex justify-center space-x-2 mb-5">
@@ -13,11 +13,6 @@ export default function Home() {
         </div>
 
         <Avatar src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" name="Lisa Tsang" caption="Nurse"/>
-
-        <Link href={"/dashboard"}>
-          <Button radius="xl" size="lg" className="bg-blue-500"> Go to Dashboard </Button>
-        </Link>
-
       </Flex>
     </AppShell>
   )
