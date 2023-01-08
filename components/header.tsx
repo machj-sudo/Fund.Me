@@ -15,8 +15,12 @@ function Header() {
                     <Title className="py-1.5 px-2.5 mt-1.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-500 text-white rounded"> Me </Title>
                 </div>
 
+                <Link href={"/"}>
+                    <Button radius="md" size="md" variant="outline" className="mt-2 ml-3"> Home </Button>
+                </Link>
+
                 <Link href={"/dashboard"}>
-                    <Button radius="md" size="md" variant="outline" className="mt-2 ml-3"> Dashboard </Button>
+                    <Button radius="md" size="md" variant="outline" className="mt-2 ml-1"> Dashboard </Button>
                 </Link>
 
             </Flex>
