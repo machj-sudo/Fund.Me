@@ -1,7 +1,9 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from dataclasses import dataclass
 from re import search
+
+import os 
 
 
 @dataclass
@@ -43,7 +45,11 @@ def process_file(filename: str):
     data = None
     count = section = current_total = 0
 
-    with open(f'../data/{filename}', 'r') as f:
+    path = f'../backend/data/{filename}'
+    if not os.path.exists(path):
+        raise HTTPException(status_code=404, detail="File not found")
+
+    with open(path, 'r') as f:
         data = f.readlines()
 
         for point in data:
