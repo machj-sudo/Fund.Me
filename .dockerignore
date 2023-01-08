@@ -1,0 +1,3 @@
+# Files to ignore in the local filesystem
+.next
+node_modules
