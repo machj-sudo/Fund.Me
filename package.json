@@ -12,7 +12,6 @@
     "@emotion/react": "^11.10.5",
     "@emotion/server": "^11.10.0",
     "@mantine/core": "^5.10.0",
-    "@mantine/dropzone": "^5.10.0",
     "@mantine/hooks": "^5.10.0",
     "@mantine/next": "^5.10.0",
     "@next/font": "13.1.1",

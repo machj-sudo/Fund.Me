@@ -12,7 +12,7 @@ export default function Home() {
           <Title className="py-1.5 px-2.5 leading-none text-center whitespace-nowrap align-baseline font-bold bg-blue-500 text-white rounded"> Friend! </Title>
         </div>
 
-        <Avatar src="https://mdbcdn.b-cdn.net/img/new/avatars/8.webp" name="Lisa Tsang" caption="Nurse"/>
+        <Avatar src="https://media.licdn.com/dms/image/C5603AQGjoeXfgWa5zw/profile-displayphoto-shrink_800_800/0/1633988267986?e=1678924800&v=beta&t=7-eDNZ0N_kWHDAYy-uGap_T3AaW9Ti7IA9QJxhUuQ08" name="Lisa Tsang" caption="Nurse"/>
       </Flex>
     </AppShell>
   )
